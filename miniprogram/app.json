@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/body/body",
+    "pages/heart/heart",
+    "pages/mine/mine",
+
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room",
+    "pages/home/home"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#CC3333",
+    "navigationBarTitleText": "TBS",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "useExtendedLib": {
+    "weui": true
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#0066CC",
+    "borderStyle": "black",
+    "backgroundColor": "#CCCCCC",
+    "list": [
+      {
+        "text": "修身",
+        "pagePath": "pages/body/body"
+      },
+      {
+        "text": "修心",
+        "pagePath": "pages/heart/heart"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/mine/mine"
+      }
+    ]
+  }
+}

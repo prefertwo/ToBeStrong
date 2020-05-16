@@ -1,0 +1,8 @@
+<!--miniprogram/pages/body/body.wxml-->
+<view>
+
+<iconfont icon="add"></iconfont>
+<iconfont icon="home"></iconfont>
+<iconfont icon="like"></iconfont>
+
+</view>
