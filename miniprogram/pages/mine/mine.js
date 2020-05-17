@@ -5,6 +5,40 @@ Page({
    * 页面的初始数据
    */
   data: {
+    login: true,
+    list: [
+      {
+        title: '基本信息',
+        path: '',
+        icon: 'info'
+      },
+      {
+        title: '我的记录',
+        path: '',
+        icon: 'tag'
+      },
+      {
+        title: '联系作者',
+        path: '',
+        icon: 'qr-code'
+      },
+      {
+        title: '意见反馈',
+        path: '',
+        icon: 'pencil'
+      },
+      {
+        title: '关于变强',
+        path: '',
+        icon: 'help'
+      },
+      {
+        title: '更多小程序',
+        path: '',
+        icon: 'more2'
+      }
+
+    ]
 
   },
 
@@ -12,7 +46,27 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.setKeepScreenOn({
+      keepScreenOn: true,
+    })
+  },
 
+  // 微信登录
+  loginWithWX: function() {
+    // wx.login({
+    //   complete: (res) => {
+    //     console.log('=====', res);
+    //   },
+    // })
+    wx.getUserInfo({
+      success: res => {
+        console.log('success==', res);
+      },
+      complete: (res) => {
+        console.log(res);
+        // 失败res: {errMsg: "getUserInfo:fail scope unauthorized"}
+      },
+    })
   },
 
   /**

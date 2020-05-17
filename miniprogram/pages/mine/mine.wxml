@@ -1,2 +1,30 @@
 <!--miniprogram/pages/mine/mine.wxml-->
-<text>miniprogram/pages/mine/mine.wxml</text>
+<view class="container">
+
+  <view wx:if="{{login}}" class="mine-basic">
+    <view class="avatar">
+      <image src="../../images/code-cloud-callback-config.png"></image>
+    </view>
+    <view class="info">
+      <text class="nick-name">郭正</text>
+      <text class="wx-info">微信号：9879</text>
+    </view>
+  </view>
+  <view wx:else class="mine-basic" bindtap="loginWithWX">
+    <image class="none-img" src="../../images/code-db-inc-dec.png"></image>
+    <text class="none-text">点击登录</text>
+  </view>
+
+  <view class="mine-list">
+    <view class="mine-item" wx:for="{{list}}" wx:key="index">
+      <view class="img-wrap">
+        <mp-icon icon="{{item.icon}}" color="red"></mp-icon>
+      </view>
+      <view class="title">{{item.title}}</view>
+      <view class="img-wrap">
+        <mp-icon icon="arrow" color="red"></mp-icon>
+      </view>
+    </view>
+  </view>
+
+</view>

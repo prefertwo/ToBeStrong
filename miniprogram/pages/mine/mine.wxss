@@ -1,1 +1,54 @@
 /* miniprogram/pages/mine/mine.wxss */
+
+.mine-basic {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  background-color: #FFFFFF;
+  margin: 40rpx 0;
+  padding: 40rpx 0;
+  border-radius: 20rpx;
+}
+.mine-basic image {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+}
+.mine-basic .avatar {
+  margin: 0 60rpx 0 40rpx;
+}
+.mine-basic .info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #999;
+}
+
+/* .mine */
+
+.mine-list {
+  width: 90%;
+  background-color: #FFFFFF;
+  padding: 0 20rpx;
+  /* margin: 0rpx 0; */
+  border-radius: 20rpx;
+}
+
+.mine-item {
+  display: flex;
+  align-items: center;
+  padding: 10rpx 0;
+  border-bottom: 1px solid #EEE;
+}
+/* .mine-item:nth-child(1), */
+.mine-item:last-child {
+  border-bottom: none;
+}
+.mine-item .title {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding-left: 40rpx;
+}
