@@ -10,7 +10,8 @@ Page({
       {
         title: '基本信息',
         path: '',
-        icon: 'info'
+        icon: 'info',
+        event: ""
       },
       {
         title: '我的记录',
@@ -20,7 +21,8 @@ Page({
       {
         title: '联系作者',
         path: '',
-        icon: 'qr-code'
+        icon: 'qr-code',
+        event: "openQrCode"
       },
       {
         title: '意见反馈',
@@ -49,6 +51,31 @@ Page({
     wx.setKeepScreenOn({
       keepScreenOn: true,
     })
+
+    this.pictureModal = this.selectComponent("#pictureModal")
+  },
+
+  openQrCode: function() {
+    this.pictureModal.showPicture(true);
+    // this.setData({
+    //   showCode: !this.data.showCode
+    // })
+  },
+
+  // 识别二维码
+  scanQrCode: function() {
+    console.log('ppp');
+    wx.saveImageToPhotosAlbum({
+      filePath: '/images/self.jpg',
+      complete: res => {
+        console.log(res);
+        
+      }
+    })
+    // wx.scanCode({
+    //   complete: (res) => {},
+    // })
+    
   },
 
   // 微信登录

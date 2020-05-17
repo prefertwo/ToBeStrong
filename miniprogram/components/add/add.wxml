@@ -1,0 +1,11 @@
+<!--components/add/add.wxml-->
+<view class="add-wrap" bindtap="addNew">
+
+  <iconfont class="{{rotate}}" icon="add" size="100" color="#ff0000"></iconfont>
+
+  <view class="open-modal {{showOrhide}}">
+    <view>镌刻身型</view>
+    <view>打造内心</view>
+  </view>
+
+</view>

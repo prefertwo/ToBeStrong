@@ -1,0 +1,10 @@
+<!--components/pictureModal/pictureModal.wxml-->
+<view class="picture-modal-wrap {{hidePictureAnimation}}" wx:if="{{show}}">
+  <view class="picture-wrap {{addClass}}">
+    <slot></slot>
+    <text class="picture-notice" >长按保存</text>
+  </view>
+  <view class="close-button" bindtap="hidePicture">
+    <mp-icon icon="close" size="20"></mp-icon>
+  </view>
+</view>

@@ -16,7 +16,7 @@
   </view>
 
   <view class="mine-list">
-    <view class="mine-item" wx:for="{{list}}" wx:key="index">
+    <view class="mine-item" wx:for="{{list}}" wx:key="index" bindtap="{{item.event}}">
       <view class="img-wrap">
         <mp-icon icon="{{item.icon}}" color="red"></mp-icon>
       </view>
@@ -26,5 +26,13 @@
       </view>
     </view>
   </view>
+
+  <!-- <mp-dialog show="{{showCode}}">
+    <view>dafadfasd</view>
+
+  </mp-dialog> -->
+  <picture-modal id="pictureModal">
+    <image src="../../images/self.jpg" bindlongpress="scanQrCode" ></image>
+  </picture-modal>
 
 </view>

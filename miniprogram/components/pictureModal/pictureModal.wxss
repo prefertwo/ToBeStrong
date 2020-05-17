@@ -1,0 +1,73 @@
+/* components/pictureModal/pictureModal.wxss */
+.picture-modal-wrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.picture-wrap {
+  width: 540rpx;
+  height: 640rpx;
+  padding: 20rpx;
+  background-color: #FFF;
+  border-radius: 20rpx;
+}
+.picture-wrap .picture-notice {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.showAnimation {
+  animation: showA 500ms linear;
+}
+.hideAnimation {
+  animation: hideA 1s linear;
+}
+
+@keyframes hideA {
+  0% {
+    transform: scale(1);
+    /* transform: skew(0, 0); */
+  }
+  100% {
+    transform: scale(0);
+    /* transform: skewX(90deg); */
+  }
+}
+@keyframes showA {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.close-button {
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  justify-content: center;
+  margin-top: 30rpx;
+  background-color: #FFF;
+  border-radius: 50%;
+}
+
+
+.picture-modal-wrap image {
+  /* width: 100%;
+  height: 80%; */
+  width: 500rpx;
+  height: 540rpx;
+  border-radius: 10rpx;
+}
+

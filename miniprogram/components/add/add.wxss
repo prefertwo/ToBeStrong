@@ -1,0 +1,74 @@
+/* components/add/add.wxss */
+.add-wrap {
+  position: fixed;
+  right: 40rpx;
+  bottom: 60rpx;
+  width: 100rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #336699;
+  border-radius: 50%;
+}
+
+.open-modal {
+  position: absolute;
+  bottom: 110rpx;
+  right: 50rpx;
+  width: 300rpx;
+  height: 100rpx;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border: 1px #CCC solid;
+  transition: 2s;
+}
+
+.AtoB {
+  /* animation: animateAtoB 1s linear; */
+  transform: rotate(225deg);
+  transition-duration: 1s;
+}
+
+.BtoA {
+  transform: rotate(0deg);
+  transition-duration: 1s;
+}
+
+.showAction {
+  /* translate: 200px 50px; */
+  display: flex;
+  /* translate: ; */
+  height: 200px;
+
+  /* transition: height 2s linear; */
+  /* transition-duration: 1s; */
+  /* animation: ShowOrHideA 1s linear; */
+  /* ShowOrHideA */
+}
+
+.hideAction {
+  /* translate: -200px -50px; */
+  display: none;
+  transition-duration: 1s;
+}
+
+@keyframes animateAtoB {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes ShowOrHideA {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 200rpx;
+  }
+}
