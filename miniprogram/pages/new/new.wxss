@@ -1,1 +1,55 @@
 /* miniprogram/pages/new/new.wxss */
+
+.form-wrap {
+  width: 600rpx;
+  margin: 20rpx auto;
+}
+.form-section {
+  width: 100%;
+}
+
+
+.form-item {
+  margin-top: 40rpx;
+  padding: 20rpx;
+  border: 1px solid #DEDEDE;
+  /* width: ; */
+}
+
+.form-item input,
+.form-item textarea {
+  /* box-sizing: border-box; */
+  /* width: 100%; */
+  outline: none;
+  /* border: 1px solid #DEDEDE; */
+  border-radius: 10rpx;
+}
+
+.form-item .image-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-item .image-wrap image {
+  width: 160rpx;
+  height: 160rpx;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+  border: 1px solid #DEDEDE;
+  border-radius: 10rpx;
+}
+
+.add-pic {
+  width: 160rpx;
+  height: 160rpx;
+  border: 1px solid #EFEFEF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100rpx;
+  color: #999;
+}
+
+
+.btn-section {
+  margin-top: 100rpx;
+}

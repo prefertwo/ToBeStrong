@@ -1,2 +1,37 @@
 <!--miniprogram/pages/new/new.wxml-->
-<text>miniprogram/pages/new/new.wxml</text>
+<view class="container">
+
+  <form class="form-wrap" bindsubmit="submitRecord">
+
+    <view class="form-section">
+
+      <view class="form-item">
+        <input class="" name="date" disabled value="{{currentDate}}" ></input>
+      </view>
+      
+      <view class="form-item">
+        <input class="" name="theme" placeholder="请填写主题：运动/读书/旅游" ></input>
+      </view>
+
+      <view class="form-item">
+        <textarea name="content" placeholder="说点儿什么吧！！！"></textarea>
+      </view>
+
+      <view class="form-item pic-wrap">
+        <view class="image-wrap" wx:if="{{images}}">
+          <image wx:for="{{images}}" wx:key="index" src="{{item}}"></image>
+        </view>
+        <view class="add-pic" bindtap="uploadImage"> + </view>
+      </view>
+    
+    </view>
+
+    <view class="btn-section">
+      <button type="primary" form-type="submit">发布</button>
+    </view>
+  
+  </form>
+
+
+</view>
+
